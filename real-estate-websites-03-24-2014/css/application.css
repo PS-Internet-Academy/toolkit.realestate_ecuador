@@ -2,12 +2,19 @@
 .maintext,.subtitle{
     display:none;   
 }
+#left-column-content {
+    padding:0;   
+}
 
 #global-content {
     overflow: hidden;
 }
 #center-column {
     margin-left: 0 !important;
+}
+.section-front-page #center-column {
+    margin-left: 0 !important;
+    margin-top:130px;
 }
 #content textarea {
     width: 70%;
@@ -194,7 +201,7 @@ div.row{
         width:890px;
     }
     .twocolumns{
-        width: 65%;
+        width: 63%;
         margin: 0;
    }
    .subtitle{
@@ -296,7 +303,10 @@ div.row{
         width:60%   
     }
     #left-column {
-        width:33%;   
+        width: 33%;
+        margin-right: 34px;
+        margin-left: 0 !important;
+        padding-left:0 !important;
     }
     .section-news #right-column {
         width: 33%;
@@ -420,6 +430,10 @@ div.row{
     .listing-summary #search-form .form-row-price #formfield-form-widgets-location_city{
         padding: 0 0 0 19px;
     }
+    #left-column-content #form-widgets-price_max {
+        width: 100%;
+        margin-left: 19px;
+    }
 }
 @media screen and (max-width:1199px) { 
     .container,.navbar-inner,
@@ -441,6 +455,9 @@ div.row{
     .subtitle{
         width: 100%;
         margin-left: 3%;
+    }
+    .carousel-banners {
+        width: 98.3% !important;
     }
     #right-column{
         width:33%; 
@@ -527,7 +544,10 @@ div.row{
         width:60%   
     }
     #left-column {
-        width:33%;   
+        width:33%; 
+        margin-left:0 !important;
+        margin-right:35px !important;
+        padding:0;
     }
     .section-news #right-column {
         width: 33%;
@@ -631,6 +651,10 @@ div.row{
     }
     .listing-summary #search-form .form-row-price #formfield-form-widgets-location_city{
         padding: 0 0 0 19px;
+    }
+    #left-column-content #form-widgets-price_max {
+        width: 100%;
+        margin-left: 0;
     }
 }
 @media screen and (max-width:979px) {
@@ -759,7 +783,10 @@ div.row{
         width:60%   
     }
     #left-column {
-        width:33%;   
+        width:33%;
+        margin-left:0 !important;
+        margin-right:33px !important;
+        padding:0;
     }
     .section-news #right-column {
         width: 33%;
@@ -805,9 +832,6 @@ div.row{
         right: 0;
         z-index: 1030;
         top: 12px;
-    }
-    .nav.nav-tabs {
-        margin-top: 40px;
     }
     .breadcrumb {
         margin-bottom:5px;
@@ -885,7 +909,7 @@ div.row{
     
     #portal-siteactions{
         position: relative;
-        right: 27%;
+        right: 33%;
         bottom: 15px;
         margin-top: 48px;
     }
@@ -1126,6 +1150,9 @@ div.row{
     .nav.nav-tabs {
         margin-top:40px;
     }
+    .section-front-page .nav.nav-tabs {
+        margin-top:0px;
+    }
     h1.maintext {
         font-size: 30px;
         line-height: 36px;
@@ -1162,6 +1189,9 @@ div.row{
     }
     .listing-summary #search-form .form-row-price #formfield-form-widgets-location_city{
         padding: 0 0 0 19px;
+    }
+    #formfield-form-widgets-price_max {
+        margin-left: 8% !important;;
     }
 }
 @media screen and (max-width:648px) {
@@ -1200,7 +1230,7 @@ div.row{
         font-weight:normal;
     }
     #portal-siteactions {
-        right:22%;
+        right: 27%;
         padding-right:0;
     }
     #portal-colophon{
@@ -1246,7 +1276,7 @@ div.row{
         float: left;
         padding: 0 1%;
         width: 31%;
-}
+    }
     .listing-summary #search-form .form-row-other #formfield-form-widgets-air_condition {
         padding-left: 21px;
     }
@@ -1379,13 +1409,14 @@ div.row{
     }
 }
 @media screen and (max-width:518px) {
-    
+    #formfield-form-widgets-price_max {
+        margin-left: 11% !important;
+    }
     #content .listing-summary dd {
         float: left;
         margin: 0 3% 0 0;
         width: 60%;
     }
-    
     #content .listing-summary dt {
         float: left;
         margin: 0 3% 0 0;
@@ -1427,7 +1458,7 @@ div.row{
         text-align: center;
         width: 100%;
         position: relative;
-        left: 60px;
+        left: 41px;
     }
     #portal-colophon{
         position: relative;
@@ -1579,7 +1610,7 @@ div.row{
     .container,.navbar-inner,
     .navbar-inner .container,
     .navbar-fixed-top .container, .navbar-fixed-bottom .container,
-    .nocolumns,#right-column{
+    .nocolumns,#right-column,#left-column{
         width:320px;
     }   
     .maintext, .subtitle {
@@ -1638,7 +1669,7 @@ div.row{
     .container,.navbar-inner,
     .navbar-inner .container,
     .navbar-fixed-top .container, .navbar-fixed-bottom .container,
-    .nocolumns,#right-column{
+    .nocolumns,#right-column,#left-column{
         width:280px;
     }   
     .navbar-fixed-top .navbar-inner, 
@@ -1658,7 +1689,7 @@ div.row{
         width:100%;   
     }
     #portal-colophon {
-        left:15%;   
+        left: 6%;   
     }
     #portal-personaltools {
         position: relative;
@@ -1691,13 +1722,18 @@ div.row{
     }
     .listing-summary #search-form .form-row-beds-baths .field .separator, .listing-summary #search-form .form-row-sizes .field .separator {
         display:none;   
+    }
+    #left-column-content #formfield-form-widgets-listing_type .option {
+        width: 80% !important;
+        float: left;
+        clear: none;
     }
 }
 @media screen and (max-width:336px) {
     .container,.navbar-inner,
     .navbar-inner .container,
     .navbar-fixed-top .container, .navbar-fixed-bottom .container,
-    .nocolumns,#right-column{
+    .nocolumns,#right-column,#left-column{
         width:240px;
     }   
     .navbar-fixed-top .navbar-inner, 
@@ -1717,7 +1753,7 @@ div.row{
         width:100%;   
     }
     #portal-colophon {
-        left:15%;   
+        left: -2% !important;
     }
     #portal-personaltools {
         position: relative;
@@ -1751,12 +1787,17 @@ div.row{
     .listing-summary #search-form .form-row-beds-baths .field .separator, .listing-summary #search-form .form-row-sizes .field .separator {
         display:none;   
     }
+    #left-column-content #formfield-form-widgets-listing_type .option {
+        width: 100% !important;
+        float: left;
+        clear: none;
+    }
 }
 @media screen and (max-width:299px) {
     .container,.navbar-inner,
     .navbar-inner .container,
     .navbar-fixed-top .container, .navbar-fixed-bottom .container,
-    .nocolumns,#right-column{
+    .nocolumns,#right-column,#left-column{
         width:220px;
     }   
     .navbar-fixed-top .navbar-inner, 
@@ -1765,6 +1806,11 @@ div.row{
         margin-bottom: 24px;
         padding:0;
         margin-left:20px;
+    }
+    #content .listing-summary dt {
+        float: left;
+        margin: 0 3% 0 0;
+        width: 33% !important;
     }
      #topnav-collapse{
         font-weight:normal;
@@ -1803,23 +1849,31 @@ div.row{
     .listing-summary #search-form .form-row-beds-baths .field .separator, .listing-summary #search-form .form-row-sizes .field .separator {
         display:none;   
     }
+    #left-column-content #formfield-form-widgets-listing_type .option {
+        width: 100% !important;
+        float: left;
+        clear: none;
+    }
+}
+#content {
+    margin-top:0 !important; 
+    margin-bottom:10px;
 }
 .carousel-banners {
-width: 100% !important;
+    width: 100% !important;
 }
 #socialbar{
     float:right;   
-    }
+}
 #socialbar img{
     width:22px;
     height:22px;
     float:right;  
     margin-right:7px;
-    }
+}
 .itemPadding{
     text-align:center;
-    }
-
+}
 .subheader{
     font-family: "Istok Web","Arial Black",Gadget,sans-serif;
     font-size: 14px;
@@ -2002,13 +2056,13 @@ div.scrollable div.items div.itemPadding {
     background:transparent; 
     border:0 none transparent;
     box-shadow:none;
+    margin-top: 33px;
 }
 .portlet h4 span{
     padding-left:7px;   
 }
 .twocolumns{
     position:relative;
-    bottom:40px;
 }
 .section-front-page #formfield-form-widgets-listing_type{
     display:inline-block; 
@@ -2052,7 +2106,11 @@ div.scrollable div.items div.itemPadding {
     clear: none;
 }
 #right-column-content{
-    padding:0;   
+    padding:0; 
+}
+.section-front-page #right-column-content{
+    padding:0; 
+    margin-top: 170px;
 }
 .portletTopLeft{
     margin-left:7px;   
@@ -2891,10 +2949,6 @@ ul, ol {
 }
 #left-column-content #form-widgets-price_min {
     width: 100%;
-}
-#left-column-content #form-widgets-price_max {
-    width: 100%;
-    margin-left: 19px;
 }
 #left-column-content #formfield-form-widgets-lot_size {
     width: 100%;

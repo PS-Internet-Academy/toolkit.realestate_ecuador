@@ -18,6 +18,30 @@
         css:theme="div.language-switcher"
         css:content="#portal-languageselector"
         />
+        
+        
+        
+        
+    <append 
+        css:content="#viewlet-above-content .carouselWrapper"
+        css:theme="#feature-listing-above-footer"
+        method="raw"
+    />
+    
+    <drop
+        css:content="#viewlet-above-content .carouselWrapper"
+    />
+    
+    <drop
+        css:content="#portal-header .toolkit.viewlet"
+    />
+    
+    <append css:content="#portal-header .toolkit.plugin"
+        css:theme="#ps-slider"
+        method="raw"
+    />
+    
+ 
 
     <replace
         css:theme="div.main-header"
@@ -49,7 +73,15 @@
     <drop
         css:content="#portal-footer"
         />
-
+        
+    <drop
+        css:content=".carouselWrapper"
+    />
+    
+    <drop
+        css:theme="#feature-listing-slider"
+        css:if-not-content=".carouselWrapper"
+    />
     <replace
         css:theme-children="div.movelogin"
         css:content="#portal-personaltools-wrapper"
